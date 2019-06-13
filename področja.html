@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--Naslov zavihka, opis, ključne besede, uvožen font iz Google fonts, povezava s ccs-om-->
+  <title> Umetna inteligenca</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Našteta in opisana področja UI">
+  <meta name="keywords" content="področja, strojno učenje, nevronska mreža">
+  <meta name="author" content="Kaja Skol">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+  <!--Naslovna vrstica - logo in naslov spletne strani; ob kliku na logo se vrne na osnovno stran (splošno)--> 
+  <a><h1><a href="spletna_stran.html"><img src="logo.png" width="130px" id="logo"></a><span id="naslov">Umetna inteligenca</span></h1></a>
+
+  <!--Navigacijska vrstica z gumbi in spustnimi gumbi, povezanimi z ostalimi stranmi-->
+  <div id="nav">
+    <ul id="meni">
+      <li class="gumb"><a href="spletna_stran.html">Splošno</a></li>
+      <li class="gumb"><a href="zgodovina.html">Zgodovina</a></li>
+      <li class="gumb dropdown active"><a href="področja.html" class="dropgumb">Področja</a>
+        <div class="dropdown-gumbi">
+          <a href="#strojno">Strojno učenje</a>
+          <a href="#nevronske">Nevronske mreže</a>
+        </div>
+      </li>
+      <li class="gumb dropdown"><a href="uporaba.html" class="dropgumb">Uporaba</a>
+        <div class="dropdown-gumbi">
+          <a href="uporaba.html">Izobraževanje</a>
+        </div>
+      </li>
+      <li class="gumb"><a href="zanimivosti.html">Zanimivosti</a></li>
+    </ul>
+  </div>
+
+  <!--Vsebinski del zavihka "Področja" - vsak odstavek je v svojem "paragrafu", na začetku je uvodni citat in v nadaljevanju dva načina odstavka; eden s pripadajočo sliko in drugi samostojen-->
+
+  <!--Pod slikami, desno od pripadajočega besedila, so povezave do vira slik-->
+    <p id="citat">
+      <i>“Človek in računalnik sta sposobna doseči, česar nobeden od njiju sam ne zmore.“ <br>Hubert L. Dreyfus</i> <a href="#viri"><sup>1</sup></a> 
+    </p>
+
+  <!--Dva seznama, eden na levi in drugi na desni strani-->
+    <h2>Področja umetne inteligence</h2>
+
+    <div class="seznam">  
+      <ul>
+        Obstajajo vsaj štiri področja:
+        <br>
+        <br>
+        <li><strong>vizualna inteligenca</strong> - prepoznavanje oblik, obrazov, prstnih odtisov</li>
+        <li><strong>govorna inteligenca</strong> - prepoznavanje govora, sinteza govora </li>
+        <li><strong>manipulativna inteligenca</strong> - nadzor gibanja robotske roke, nadzor nožnih mehanizmov</li>
+        <li><strong>racionalna inteligenca</strong> - ekspertni sistemi, zbirke podatkov</li>
+      </ul>
+    </div>
+
+    <div class="seznam">
+      <ul>
+        In nekatera podpodročja:
+        <br>
+        <br>
+        <li><strong>strojno učenje</strong> - stroji, ki imajo sposobnost učenja</li>
+        <li><strong>nevronske mreže</strong> - najbolj znani stroji, ki se lahko učijo, izdelani po vzoru naših možganov</li>
+        <li><strong>ekspertni sistemi</strong> - sistemi za pomoč pri odločanju</li>
+        <li><strong>računalniški vid</strong> - sistemi, ki računalnikom omogočajo videti objekte</li>
+        <li><strong>inteligentni roboti</strong> - prepoznavajo predmete, se gibajo v prostoru</li>
+        <li><strong>procesiranje naravnega jezika</strong> - prepoznavanje govora, prevajanje jezika, pisanje besedila na osnovi govora</li> <a href="#viri"><sup>2</sup></a>  
+      </ul>
+    </div>
+    
+  <!--Značka v h2 povezuje odstavek s spustnim menijem; ob kliku nanj preskoči na z značko označen odstavek-->
+    <h2 id="strojno">Strojno učenje</h2>
+    <p class="besedilo_s_sliko">
+      Definicija učenja v slovarju SSKJ se glasi: »Učenje je pridobivanje znanja, razumevanja ali sposobnosti s preučevanjem, poučevanjem ali vadbo.« Strojno učenje ima številne podobnosti z biološkim (ljudskim) učenjem, le da učenec ni živo bitje, ampak naprava oziroma inteligentni sistem. Za začetnika strojnega učenja šteje Arthur Samuel, ki je postavil naslednjo definicijo: »Strojno učenje je raziskovalno področje, ki omogoča računalnikom učenje brez izrecnega programiranja.« Med izvajanjem strojnega učenja se spreminja zgradba stroja, njegovega programa ali njegovih podatkov tako, da se izboljšuje njegovo delovanje. Na primer: sistemu za prepoznavo govora med učenjem predvajamo govorne vzorce, ki pripadajo raznolikim govorcem (stari in mladi, moški in ženske, …) in se mu tako izboljšuje natančnost prepoznavanja izgovorjenih besed.
+    </p>
+
+    <img src="strojno.jpg" alt="Robot, ki se sam uči" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://pixabay.com/photos/robot-mech-machine-technology-2301646/">Vir: Pridobljeno s <i>Pixabay</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Smiselnost strojnega učenja?
+      <br>
+      <br>
+      Preden se lotimo strojnega učenja, je dobro vedeti, kdaj ga je smiselno uporabiti. Izkaže se, da je smiselno predvsem v dveh primerih; kadar ljudje ne znamo zapisati pravil, ki veljajo med vzroki in posledicami, drugače kot z množico primerov in kadar se okolje spreminja, inteligentni sistem pa se s sprotnim učenjem samodejno prilagaja novim okoliščinam. Kot zanimivost omenimo še to, da z učenjem strojev ljudje pridobivamo nova spoznanja. Pri strojnem učenju so namreč razmere ponovljive in lahko spreminjamo posamezne učne parametre ter tako ločeno ugotavljamo njihov vpliv na rezultat učenja, kar pri biološkem učenju (skoraj) ni mogoče.
+    </p>
+
+    <h2>Vrste strojnega učenja</h2>
+    <p>
+      Prva delitev strojnega učenja je povezana z nadzorom. Beseda nadzor se nanaša na poznavanje pričakovanega učnega rezultata. Glede nadzora obstajajo tri vrste strojnega učenja:
+      <br>
+      <br>
+      – <strong>Nenadzorovano učenje:</strong> Pri takšnem učenju so podani le učni vzorci, ne pa tudi pričakovani rezultati. Naprava med učenjem pregleda učne vzorce in jih razvrsti v več skupin oziroma razredov po svojih merilih. Rezultat takšnega učenja je nepredvidljiv, kar navadno ni zaželeno. Primer nenadzorovanega učenja je stroj, ki razvršča fotografije ljudi v več razredov (kategorij), ki jih ustvari po svoje. Ne vemo, katere skupne značilnosti bodo imele fotografije posameznega razreda, niti koliko razredov bo med učenjem nastalo. Zgodi se lahko, da bo stroj ločil ljudi na fotografijah po velikosti, po barvi las, po spolu ali katerikoli drugi lastnosti, morda jih bo ločil samo na male in velike, ali pa bo med tema razredoma naredil še enega ali več vmesnih. 
+      <br>
+      <br>
+      – <strong>Okrepčevalno učenje:</strong> Pri tovrstnem učenju inteligentni sistem dobi en sam pričakovani rezultat, ki velja za celotno zaporedje učnih vzorcev. Na primer, pri šahu je šele na koncu igre znano, kako uspešni smo bili, odvisno od tega, ali smo zmagali, igrali neodločeno ali izgubili. Med igro ne moremo povsem natančno vrednotiti posameznih potez, saj se včasih med igro splača žrtvovati figuro, kar se obrestuje šele čez nekaj potez. Zato učenje šaha poteka na ravni celotnih šahovskih partij in ne na ravni posameznih potez. Intuitivno lahko sklepamo, da je okrepčevalno učenje učinkovitejše od nenadzorovanega, saj imamo vsaj posredno informacijo o tem, kako dobre so posamezne igralčeve poteze (zmagovalčeve poteze so boljše od poraženčevih).
+      <br>
+      <br>
+      – <strong>Nadzorovano učenje:</strong> Pri nadzorovanem učenju ima vsak posamezen učni podatek tudi pripadajoč pričakovan rezultat. Učenje poteka ločeno za vsak učni vzorec posebej. Za pojasnilo lahko uporabimo isti primer kot pri nenadzorovanem učenju – razvrščanje fotografij ljudi. Sedaj velja, da pred začetkom učenja določimo, koliko je razredov in v kateri razred sodi posamezna fotografija. V praksi se najpogosteje uporablja nadzorovano učenje, saj nam nenadzorovano učenje daje nepredvidljive rezultate. Nenadzorovano učenje se izkaže za uporabno pri genetskih algoritmih, kjer najprej dobimo množico različnih rešitev in nato z naravno selekcijo izločamo slabe rešitve. 
+      <br>
+      <br>
+      Druga delitev strojnega učenja se nanaša na podatkovni tip rezultata:
+      <br>
+      – <strong>razvrščanje:</strong> rezultat razvrščanja ima lahko le končno mnogo vrednosti (naštevni tip podatkov). Na primer, sadeže razvrščamo na jabolka in hruške; 
+      <br>
+      – <strong>regresija (napovedovanje):</strong> rezultat napovedovanja ima lahko poljubno vrednost (zvezni tip podatkov). Na primer, napovedovanje temperature za naslednji dan. <a href="#viri"><sup>3</sup></a>
+    </p>
+
+    <h2 id="nevronske">Nevronske mreže</h2>
+    <p class="besedilo_s_sliko">
+      <strong>Umetne nevronske mreže</strong><i>(srtificial neural networks)</i>, običajno imenovane kar nevronske mreže, uporabljajo enak princip delovanja, kot naj bi ga uporabljali človeški možgani. Osnovna celica možganov je <strong>nevron</strong> <i>(neuron)</i>. Hitrost dogodka v nevronu je reda 10<sup>-3</sup>s, v silikonskih logičnih vratih pa 10<sup>-9</sup>s. 
+      <br>
+      <br>
+      Možgani predstavljajo izredno zahteven nelinearni in vzporedni računalnik. Imajo sposobnost organiziranja nevronov, tako da izvršujejo določene naloge (npr. razpoznavanje vzorcev, zaznavanja, nadzor gibanja). Možgani tako delo opravijo v desetinki sekunde, medtem ko bi računalnik potreboval še za dosti lažje probleme več dni. <a href="#viri"><sup>4</sup></a>
+    </p>
+    
+    <img src="nevron.jpg" alt="Nevronska celica" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://pixabay.com/illustrations/nerve-cell-neuron-brain-neurons-2213009/">Vir: Pridobljeno s <i>Pixabay</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Nevronska mreža je sestavljena iz množice umetnih nevronov. Nevroni so pragovne funkcije, ki imajo več različno uteženih vhodov in en izhod ter so med seboj povezani. Najenostavnejše nevronske mreže imajo le en nivo oz. sloj, pri bolj kompliciranih nevronskih mrežah pa je teh nivojev lahko več. Po povezavah umetni nevroni drug drugemu pošiljajo električne dražljaje oz. signale. Če je vsota vhodnih signalov dovolj velika, pride do vžiga nevrona, kar pomeni, da se na izhodu pojavi signal. Povezave med nevroni lahko imajo poljubno jakost in strukturo.
+    </p>
+
+    <p>
+      Uteži vhodov posameznih nevronov, povezave med nevroni ter prag, pri katerem nevron na izhodu odda signal, se oblikujejo z učenjem. To pomeni, da se navedeni parametri nevronske mreže spreminjajo toliko časa, dokler ni nevronska mreža zmožna optimalno rešiti nekega problema.
+      <br>
+      <br>
+      Bistvo nevronskih mrež je v tem, da med učenjem same ugotovijo pravilo, ki povezuje izhodne podatke z vhodnimi. To pomeni, da se lahko naučijo tudi več in bolje kot učitelj oziroma človek. Ko je nevronska mreža naučena (kar lahko traja dlje časa), deluje tudi v situacijah, s katerimi v procesu učenja ni imela opravka. To pomeni, da lahko rešuje tudi naloge, kjer ne obstaja rešitev v obliki zaporedja korakov (kot npr. pri računalniških algoritmih), čeprav pri tem obstaja večja nevarnost nepredvidljivega delovanja.
+    </p>
+
+    <h2>Vrste nevronskih mrež</h2>
+    <p>
+      Nevronske mreže se med seboj razlikujejo po zgradbi, po vrsti učenja (nadzorovano in nenadzorovano) in po vrsti signalov (analogni in digitalni). Najbolj znane nevronske mreže so: Perceptron, Self-Organizing Maps (SOM, tudi Kohonenova nevronska mreža) in na primer Hopfieldova nevronska mreža (asociativni pomnilnik), obstajajo pa še mnoge druge. <a href="#viri"><sup>5</sup></a>
+      <br>
+      <br>
+      Po kompleksnosti ločimo:
+      <br>
+      <br>
+      - <strong>Preprost nevron:</strong> Mreža ima dva načina delovanja; način vadbe in način uporabe. Pri načinu vadbe lahko nevron usposobimo da se odzove ali ne odzove na določene vzorce vhodov. Pri načinu uporabe, ko je naučen vhodni vzorec prepoznan na vhodu, bo na izhodu podan ustrezen izhodni signal. Če vhodni vzorec ne spada med naučene vzorce vhodov, se za odločitev delovanja mreže uporabijo pravila sprožitve (The firing rule), ki so pomemben sestavni del nevronskih mrež ter vzrok za njihovo visoko fleksibilnost. Pravilo sprožitve določi izračun, kdaj naj se nevron ob nekem vzorcu sproži in kdaj ne. Ta pravila veljajo za vse vhodne vzorce, ne samo za vhode s katerimi je bil nevron naučen.
+      <br>
+      <br>
+      - <strong>Kompleksni nevron:</strong> Pittsov in McCullochov model nevrona (MCP) je primer kompleksnejšega nevrona in se od preprostejšega razlikuje po tem, da imajo vhodni podatni težo. Učinek, ki ga ima vsak vhod na možnost odločanja, je odvisen od uteži na vhodu. Utež je številka, s katero množimo vhodne podatke, ki zato postanejo obteženi. Te obtežene vhodne signale nato seštejemo in če vsota presega vnaprej določen prag, se vozlišče sproži. Če pa vsota ne presega vnaprejdoločenega praga, pa se vozlišče ne sproži. <a href="#viri"><sup>6</sup></a>
+    </p>
+    
+  <!--Zaključna črta, pod katero so citirani viri, iz katerih je uporabljeno vsebinsko besedilo; med besedilom je z malimi številkami označena povezava do njih-->
+    <hr>
+    <p id="viri">
+      <sup>1</sup> Kononenko, I. (1997). <i>Strojno učenje.</i> Ljubljana: Fakulteta za računalništvo in informatiko. (str. 31)
+      <br>
+      <sup>2</sup> <i>Umetna inteligenca.</i> (2019). Pridobljeno s https://sl.wikipedia.org/wiki/Umetna_inteligenca.
+      <br>
+      <sup>3</sup> Ploj, B. (2016). <i>Umetna inteligenca – Splošno (1.del).</i> Pridobljeno s https://www.researchgate.net/profile/Bojan_Ploj/publication/304658049_Umetna_inteligenca_-_Splosno_1del/links/577632ed08ae1b18a7e176b9/Umetna-inteligenca-Splosno-1del.pdf?origin=publication_detail
+      <br>
+      <sup>4</sup> Guid, N. in Strnad, D. (2007). <i>Umetna inteligenca.</i> Maribor: Fakulteta za elektotehniko, računalništvo in informatiko. (str. 211)
+      <br>
+      <sup>5</sup> <i>Nevronska mreža.</i> (2019). Pridobljeno s https://sl.wikipedia.org/wiki/Nevronska_mre%C5%BEa.
+      <br>
+      <sup>6</sup> <i>Artificial neural network.</i> (2019). Pridobljeno s https://en.wikipedia.org/wiki/Artificial_neural_network.
+    </p>
+    
+  <!--Tako imenovana "noga" oziroma zaključni pas strani, z mojim imenom in letom izdelave strani--> 
+  <div id="footer">
+    @Kaja Skol
+    <br> 
+    2019
+  </div>
+    
+ </body>
+</html>

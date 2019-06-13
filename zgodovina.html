@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--Naslov zavihka, opis, ključne besede, uvožen font iz Google fonts, povezava s ccs-om-->
+  <title> Umetna inteligenca</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zgodovina umetne inteligence">
+  <meta name="keywords" content="Zgodovina, začetki, razvoj">
+  <meta name="author" content="Kaja Skol">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+  <!--Naslovna vrstica - logo in naslov spletne strani; ob kliku na logo se vrne na osnovno stran (splošno)--> 
+  <a><h1><a href="spletna_stran.html"><img src="logo.png" width="130px" id="logo"></a><span id="naslov">Umetna inteligenca</span></h1></a>
+
+  <!--Navigacijska vrstica z gumbi in spustnimi gumbi, povezanimi z ostalimi stranmi-->
+  <div id="nav">
+    <ul id="meni">
+      <li class="gumb"><a href="spletna_stran.html">Splošno</a></li>
+      <li class="gumb active"><a href="zgodovina.html">Zgodovina</a></li>
+      <li class="gumb dropdown"><a href="področja.html" class="dropgumb">Področja</a>
+        <div class="dropdown-gumbi">
+          <a href="področja.html">Strojno učenje</a>
+          <a href="področja.html">Nevronske mreže</a>
+        </div>
+      </li>
+      <li class="gumb dropdown"><a href="uporaba.html" class="dropgumb">Uporaba</a>
+        <div class="dropdown-gumbi">
+          <a href="uporaba.html">Izobraževanje</a>
+        </div>
+      </li>
+      <li class="gumb"><a href="zanimivosti.html">Zanimivosti</a></li>
+    </ul>
+  </div>
+
+  <!--Vsebinski del zavihka "Zgodovina" - vsak odstavek je v svojem "paragrafu", na začetku je uvodni citat in v nadaljevanju dva načina odstavka; eden s pripadajočo sliko in drugi samostojen-->
+
+  <!--Pod slikami, desno od pripadajočega besedila, so povezave do vira slik-->
+    <p id="citat">
+      <i>“V splošnem je učeči se stroj vsaka naprava, pri kateri izkušnje iz preteklosti vplivajo na akcije.“ <br>Nils J. Nilsson</i> <a href="#viri"><sup>1</sup></a> 
+    </p>
+
+    <p>
+      Zgodovina umetne inteligence se deli na več manjših podenot v katerih so bili postavljeni določeni mejniki.
+    </p>
+
+    <h2>»Prazgodovina« umetne inteligence (do leta 1950)</h2>
+    <p class="besedilo_s_sliko">
+      Pobude oziroma ideje za umetno inteligenco izvirajo že iz antike, ko so takratni veleumi želeli zgraditi napravo, ki bi znala misliti in sklepati. A prvi dejanski koncepti so se pojavili v 17. stoletju, ko je Gottfried Leibniz razširil prej poznan koncept računskega stroja v stroj, ki bi namesto številk lahko operiral s koncepti.
+      <br>
+      <br>
+      Leta 1936 se je izpod rok očeta teoretičnega računalništva in umetne inteligence Alana Turinga rodil tako imenovani koncept Turingovega stroja. Turingov stroj je matematični model, ki določa abstraktni stroj, ki preko vhodnih podatkov (nekega traka simbolov) omogoča konstrukcijo logike kateregakoli računalniškega algoritma. Ta ideja, da lahko računalnik posnema katerikoli proces sklepanja, je raziskovalce vodila do spoznanja, da bi lahko premislili o izgradnji električnih možganov.
+    </p>
+
+    <img src="turing.jpg" alt="Kip Turinga" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://pixabay.com/photos/scientist-alan-turing-computers-2288562/">Vir: Pridobljeno s <i>Pixabay</i> (maj 2019).</a>
+    </div>
+
+    <h2>1950</h2>
+    <p>
+      Leta 1950 je Alan Turing postavil enega izmed ciljev umetne inteligence, in sicer da bi zasnovali napravo, ki bi se tako dobro pretvarjala da je človek, da je zunanji opazovalec ne bi mogel ločiti od običajnega človeškega obnašanja. Taka naprava bi v tem primeru opravila Turingov test in bila prepoznana kot inteligenta naprava. Turingov test bi bil sestavljen iz pogovora med strojem in človekom v naravnem jeziku, v katerega bi se vključil človeški sodnik, ki bi se zavedal da je eden od govorečih stroj, njegova naloga pa bi bila ugotoviti kateri. Vsa komunikacija bi potekala preko tipkovnice in zaslona, tako da sposobnost in kvaliteta sinteze računalniškega govora ne bi imela vpliva. Če sodnik ne bi uspel razločiti med strojem in človekom, pomeni da bi ta stroj opravil Turingov test.
+      <br>
+      <br>
+      Ideje glede umetne inteligence so se množile in tako se je leta 1956 izvedla takoimenovana Dartmouthova konferenca oziroma delavnica, na kateri so se takrat vodilni strokovnjaki na področju računalništva in matematike sestali in razmišljali o ekspertnih sistemih, simboličnem programiranju logičnih sistemih ipd. Ta konferenca naj bi pomenila prelomnico, po kateri se je umetna inteligenca obravnavala kot svoja samostojna veda.
+      <br>
+      <br>
+      V tem obdobju so se začeli zasnovati tudi že prvi višjenivojski programski jeziki, med katerimi je bil LISP favoriziran programski jezik za raziskovanje v umetni inteligenci, saj je bil takrat eden redkih programskih jezikov, ki je poznal rekurzijo ter rekurzivne podatkovne tipe. V LISP-u je bil napisan tudi znani program SHRDLU, ki je v svetu kock in enostavnih predmetov razumel naravni jezik (angleščino) in je tako preko klepeta z uporabnikom izvajal njegove ukaze, iz njih sklepal kaj je uporabnik mislil in si celo zapomnil imena za določene objekte.
+    </p>
+
+    <h2>1960</h2>
+    <p>
+      Obdobje med letoma 1960 in 1970 so zaznamovali hitri uspehi. Umetna inteligenca se je ukvarjala z računalniški igrami, dokazovanjem izrekov in analizo slik ter jezika. V tem obdobju je zaslovel računalniški program Eliza, ki se je, podobno kot SHRDLU, ukvarjal s komunikacijo z uporabnikom. Eliza je simuliral pogovor, z metodami povezovanja vzorcev in metodologijo substitucije, s čimer je povzročil iluzijo razumevanja. Najbolj slavna je skripta DOCTOR (1964-1966), ki je obravnavana kot eden prvih programov, ki bi mu dejansko uspelo opraviti Turingov test. Program je simuliral psihoterapevta, ki je preko pravil, napisanih v skripti, uporabniku odgovarjal s posrednimi vprašanji.
+    </p>
+
+    <h2>1970</h2>
+    <p class="besedilo_s_sliko">
+      V tem obdobju so se razvili ekspertni sistemi; to so inteligentni sistemi, ki so specializirani na ozkem področju neke stroke, s pomočjo znanja in procedur pa lahko na omejenem področju emulirajo sposobnost odločanja in reševanja problemov človeških izvedencev. Niso nadomestek ljudi, ampak njihov pripomoček.
+      <br>
+      <br>
+      V 70-ih letih se je osnovala ena izmed pomembnejših vej umetne inteligence – strojno učenje. Pri tem ne gre za učenje prednaloženih podatkov, ampak gre za sposobnost učenja, brez potrebe po eksplicitnem programiranju. Tesno je povezano z računsko statistiko, ki skrbi za napovedi, saj se mora program učiti iz izkušenj. Da pa je to efektivno, je tudi zelo povezano z matematično optimizacijo. Pri tem ne smemo pozabiti na takoimenovano teorijo (na)učljivosti, ki se ukvarja z oblikovanjem in analizo algoritmov strojnega učenja.
+    </p>
+
+    <img src="vitez.jpg" alt="Vitezove roke" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/combat-figure-fingers-gear-349455/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Pri vseh zgoraj naštetih vejah umetne inteligence je pripomoral razvoj novega programskega jezika Prolog, saj se je uporabljal tako za dokazovanje izrekov, ekspertne sisteme, kot tudi za avtomatsko načrtovanje. Prolog je povzročil vpeljavo nove paradigme programskih jezikov – indukcijsko logično programiranje, ki uporablja logiko kot konsistentno reprezentacijo primerov.
+      <br>
+      <br>
+      Program mora tako znati razločevati med pozitivnimi in negativnimi primeri, kar počne tudi s pomočjo vnaprej znanega znanja. Iz tega nato lahko določi sklep, ki je glede na predpostavke do neke mere pravilen. To je v realnem svetu veliko bolj uporabno, saj ne vemo, če so predpostavke zmeraj 100 % pravilne oziroma popolnoma splošne.
+      <br>
+      <br>
+      Po teh odkritjih je v svetu umetne inteligence prišlo do zastoja, do tako imenovane prve »zime UI«. Zastoj je bil posledica umika finančne podpore ameriške in britanske vlade, ki sta svojo podporo namenili drugim »perspektivnejšim« področjem.
+    </p>
+    
+    <h2>1980</h2>
+    <p>
+      Umetna inteligenca je v 9. desetletju 20. stoletja dobila nov zagon, ki je bil posledica komercialne uspešnosti ekspertnih sistemov. To je, skupaj z japonskim projektom 5. generacije računalnikov, znova navdihnilo ameriško in britansko vlado, da sta financirali akademske raziskave na področju umetne inteligence. Kljub temu je leta 1987, zaradi propada trga strojev Lisp, znova nastopilo obdobje zime UI.
+    </p>
+
+    <h2>1990 – danes</h2>
+    <p class="besedilo_s_sliko">
+      Na koncu 20. stoletja in v 21. stoletju je umetna inteligenca postala integrirana v vseh sferah življenja. Sprva se jo je začelo aplicirati v logistiki, rudarjenju podatkov in medicini, vse uspehe pa je omogočalo večanje računske moči računalnikov, saj so nove tehnologije omogočale izdelavo vse močnejših in zmogljivejših procesorjev. Umetna inteligenca se je začela na široko uporabljati pri reševanju problemov v znanosti, pa tudi drugod.
+      <br>
+      <br>
+      Prva velika in odmevna zmaga umetne inteligence je bil skalp svetovnega šahovskega prvaka Gary-a Kasparova, ki ga je IBM-ov Deep Blue leta 1997 premagal z rezultatom 3.5 – 2.5. Zmaga je povzročila val presenečenj, saj je šah vedno veljal za domeno inteligentnih ljudi in bi tako moral biti stroj, ki je premagal najmočnejšega šahista na svetu prav tako smatran kot inteligenten. To je povzročilo številne debate, ki so privedle do teorij razdelitve umetne inteligence na šibko in močno. Seveda debate potekajo še danes in ne bi bili presenečeni, če bi v debato kmalu posegli tudi stroji z implementirano UI ter začeli zastopati svoja stališča in argumentirati svoj pogled na vso zadevo.
+    </p>
+      
+    <img src="walle.jpg" alt="Robot" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/combat-figure-fingers-gear-349455/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Napredek je šel pospešeno naprej in aplikacija umetne inteligence je postala vedno lažja. Leta 2002 je Amazon nadomestil svoje človeške urednike z avtomatiziranim sistemom, Apple je 2011 izdal osebno pomočnico Siri, leta 2015 pa je računalniški program AlphaGo premagal najmočnejšega igralca igre Go na svetu. To je samo nekaj prelomnic pri uporabi in integraciji umetne inteligence v naše vsakdanjike. Danes je umetna inteligenca res povsod; v spletnem nabiralniku, v samovozečih avtomobilih, v priljubljenem spletnem brskalniku, torej tam, kjer bi njena uporaba lahko optimizirala delovanje naprave ali programa. Z razvojem računalniških nevronskih mrež in mnogo drugih vej umetne inteligence se njena uporabnost širi, učinkovitost pa veča.
+      <br>
+      <br>
+      Prav ta napredek pa straši mnoge ljudi, saj jim je umetna inteligenca še vedno nekaj neznanega in računalnikom še zdaleč ne zaupajo. Ta vzorec se je ponovil že mnogokrat v človeški zgodovini, saj na začetku tudi elektronskim dvigalom nismo zaupali in so jih zato še dolga leta upravljali za to posebej »izurjeni« ljudje. Kako bi svet izgledal danes, če bi bil pri vseh dvigalih še vedno upravljalec z nalogo, ki jo opravi že dokaj preprosto vezje? <a href="#viri"><sup>2</sup></a>
+    </p>
+
+  <!--Zaključna črta, pod katero so citirani viri, iz katerih je uporabljeno vsebinsko besedilo; med besedilom je z malimi številkami označena povezava do njih-->
+    <hr>
+    <p id="viri">
+      <sup>1</sup> Kononenko, I. (1997). <i>Strojno učenje.</i> Ljubljana: Fakulteta za računalništvo in informatiko. (str. 1)
+      <br>
+      <sup>2</sup> Magerl Ž. (2017). <i>Prelomnice v zgodovini umetne inteligence.</i> Pridobljeno s https://maklus.si/prelomnice-v-zgodovini-umetne-inteligence/.
+    </p>
+    
+  <!--Tako imenovana "noga" oziroma zaključni pas strani, z mojim imenom in letom izdelave strani--> 
+  <div id="footer">
+    @Kaja Skol
+    <br> 
+    2019
+  </div>
+    
+ </body>
+</html>

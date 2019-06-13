@@ -1,0 +1,172 @@
+/* Oblikovanje naslovne vrstice in loga, logo na strogi levi strani, naslov spletne strani pa na sredini zgornjega pasu spletne strani, pisava je uvožena iz Google fonts */
+#naslov {
+    text-transform: uppercase;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 170%;
+    line-height: 2.5;
+}
+
+h1 {
+    background-color: LightGray;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+#logo {
+    float: left;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Oblikovanje horizontalne navigacijske vrstice, menija in gumbov na meniju, njihovo spreminjanje ob potegu in kliku z miško*/
+#meni {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Poravnava gumbov na meniju */
+#nav {
+    margin-bottom: 30px;
+}
+
+.gumb {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 14px 0;
+    width: 250px;
+    text-decoration: none;
+}
+
+/* Sprememba gumbov ob stiku z miško */
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Sprememba gumbov ob pritisku z miško */
+.active {
+    background-color: Gray;
+}
+
+
+/* Oblikovanje vertikalnih spustnih menijev, gumbov in njihovega spreminjanja ob interakciji z miško */
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-gumbi {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+  
+.dropdown-gumbi a {
+    color: black;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Spreminjanje izbirnega gumba na spustnem meniju ob stiku z miško */
+.dropdown-gumbi a:hover {
+      background-color: white;
+}
+  
+.dropdown:hover .dropdown-gumbi {
+    display: block;
+}
+    
+  
+/* Oblikovanje vsebinskega dela spletne strani z robovi, pisavo in poravnavo */
+/* Telo spletne strani, pisava */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Odmiki odstavkov */
+p {
+    margin: 2% 5% 2% 5%;
+}
+
+/* Odmiki naslovov */
+h2 {
+    margin: 0 5%;
+}
+
+/* Odmiki seznama in poravnava, v primeru ko imam dva seznama na isti širini spletne strani */
+ul {
+    margin: 2% 2%;
+}
+
+.seznam {
+    width: 45%;
+    margin: 2% 2.5% 2% 2.5%;
+    float: left;
+}
+
+/* Oblikovanje besedila, kadar ima na desni strani pripadajočo sliko */
+.besedilo_s_sliko {
+    width: 40%;
+    margin: 2% 5% 2% 5%;
+    float: left;
+}
+
+/* Oblikovanje uvodnega citata */
+#citat {
+    text-align: center;
+    margin: 0 30% 5% 30%;
+}
+
+/* Postavitev horizontalne črte nad navedbo virov in postavitev le-teh*/
+hr {
+    margin: 10% 10% 0 10%
+}
+
+#viri {
+    margin: 0 7% 2% 11%
+}
+
+/* Oblikovanje slik in navedbe virov pod njimi */
+#link_vira {
+    background-color: black;
+    color: white;
+}
+
+.okvir_slike {
+    padding: 15px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.slike {
+    float: left;
+    padding: 0 10%;
+}
+
+
+/* Spodnja vrstica oziroma "noga" */
+#footer {
+    background-color: lightgray;
+    color: black;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--Naslov zavihka, opis, ključne besede, uvožen font iz Google fonts, povezava s ccs-om-->
+  <title> Umetna inteligenca</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zanimivosti o umetni inteligenci">
+  <meta name="keywords" content="Zanimivosti, umetna inteligenca">
+  <meta name="author" content="Kaja Skol">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+  <!--Naslovna vrstica - logo in naslov spletne strani; ob kliku na logo se vrne na osnovno stran (splošno)--> 
+  <a><h1><a href="spletna_stran.html"><img src="logo.png" width="130px" id="logo"></a><span id="naslov">Umetna inteligenca</span></h1></a>
+
+  <!--Navigacijska vrstica z gumbi in spustnimi gumbi, povezanimi z ostalimi stranmi-->
+  <div id="nav">
+    <ul id="meni">
+      <li class="gumb"><a href="spletna_stran.html">Splošno</a></li>
+      <li class="gumb"><a href="zgodovina.html">Zgodovina</a></li>
+      <li class="gumb dropdown"><a href="področja.html" class="dropgumb">Področja</a>
+        <div class="dropdown-gumbi">
+          <a href="področja.html">Strojno učenje</a>
+          <a href="področja.html">Nevronske mreže</a>
+        </div>
+      </li>
+      <li class="gumb dropdown"><a href="uporaba.html" class="dropgumb">Uporaba</a>
+        <div class="dropdown-gumbi">
+          <a href="uporaba.html">Izobraževanje</a>
+        </div>
+      </li>
+      <li class="gumb active"><a href="zanimivosti.html">Zanimivosti</a></li>
+    </ul>
+  </div>
+
+  <!--Vsebinski del zavihka "Zanimivosti" - vsak odstavek je v svojem "paragrafu", na začetku je uvodni citat in v nadaljevanju dva načina odstavka; eden s pripadajočo sliko in drugi samostojen-->
+
+  <!--Pod slikami, desno od pripadajočega besedila, so povezave do vira slik-->
+    <p id="citat">
+      <i>“Povej mi in bom pozabil. <br> Pokaži mi in si bom zapomnil. <br> Vzbudi mi zanimanje in bom razumel. <br>
+          Kitajski pregovor “ </i> <a href="#viri"><sup>1</sup></a> 
+    </p>
+
+    <p>
+      Od Turingove začetne teorije je obstajal stalen pohod za ustvarjanje mislečih strojev. V zadnjih nekaj desetletjih je bil na tem področju dosežen ogromen napredek, kljub temu pa se moramo vprašati, ali je to nujno tudi dobra stvar. Tukaj je nekaj zanimivih dejstev UI, med katerimi so nekatera malo... zaskrbljujoča.
+    </p>
+
+    <h2>1. Večina umetno inteligentnih strojev je ženskega spola</h2>
+    <p class="besedilo_s_sliko">
+      Ena od stvari, ki ste jo morda opazili, ko gre za UI s katerimi lahko sodelujete, npr. Google Now, Siri in Cortana, je ta, da je privzeti glas ženski. 
+      <br>
+      <br>
+      Zakaj je temu tako?
+      <br>
+      <br>  
+      Prav posebnega razloga ni, je pa v njem nekaj dejavnikov. Študije so na primer pokazale, da sta oba, moški in ženski glas, nekoliko bolj podobna ženskemu. Drugi razlog, po mnenju Karla Fredricka MacDormana, računalniškega znanstvenika in strokovnjaka za interakcijo med človekom in računalnikom, je, da z UI delajo večinoma moški, katere verjetno privlačijo ženske in želijo, da jim UI sledi. Kathleen Richardson, socialna antropologinja, je povedala, da bi bile ženske UI manj nevarne kot moški. Primerjajmo lik Samanthe v filmu Ona in stroje v filmu Terminator. No, razen Terminatorja 3, pa spet, kdo za vraga se spomni takega filma?  
+    </p>
+
+    <img src="zenska.jpg" alt="Ženski robot" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/adult-artificial-beautiful-beauty-40899/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <h2>2. Nautilus</h2>
+    <p>
+      Zanimiv razvoj umetne inteligence je superračunalnik SGI Altix, imenovan Nautilus. Zdi se, da lahko Nautlius do določene mere napove prihodnost. Na primer, lahko je napovedal lokacijo skrivališča Osama bin Ladna z natančnostjo do 125 milj, in predvidel arabsko pomlad, ki se je začela decembra 2010.
+      <br>
+      <br>
+      Nautilus je zbral te informacije iz več kot 100 milijonov novic celega sveta iz leta 1945. Članke naj bi analiziral na podlagi dveh različnih meril: razpoloženja članka in lokacije zgodbe. Te informacije so privedle do spleta 100 trilijonov odnosov, podatki pa so bili vneseni v Nautilus. Na podlagi teh informacij jih je računalnik lahko združil in ustvaril grafe, ki so prikazovali razpoloženje. Na primer, z arabsko pomladjo je bilo razpoloženje na območju pred protesti slabo.
+    </p>
+        
+    <h2>3. Umetno inteligentni hišni ljubljenčki</h2>
+    <p class="besedilo_s_sliko">
+      Hišni ljubljenčki so super, vendar imajo številne slabosti. Za njimi moramo počistiti, lahko so destruktivni, potrebno jih je nahraniti, njihovo življenje pa je omejeno. Nekaj, kar bo poskrbelo za vse te slabe strani, so ljubljenčki z UI. Raziskovalec za dobro počutje živali, dr. Jean-Loup Rault, pravi, da že obstajajo številni patenti za robotske hišne ljubljenčke, ki bodo do leta 2025 lahko dostopni. 
+      <br>
+      <br>
+      Rault trdi tudi, da bodo v naslednjih 10-15 letih razvijalci delali na številnih vidikih umetne inteligence ter robotike, da bodo proizvajalci lahko zgradili hišne ljubljenčke, s katerimi bo mogoče vzpostaviti čustveno povezavo. Teoretiziral je, da si bodo do leta 2050 samo neverjetno bogati lahko privoščili prave žive živali.
+    </p>
+
+    <img src="kuza.jpg" alt="Robotski pes" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/white-and-black-dog-robot-on-clear-glass-table-36989/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <h2>4. UI apokalipsa</h2>
+    <p>
+      Ni dvoma, da ima UI potencial izboljšati naša življenja. UI bo naredila varnejše ceste, pomagala pri medicini, invalidnim osebam ter starejšim, pomagala bo pri delu s strankami in nadomestila številna druga delovna mesta. Kljub temu pa predstavlja neverjetno grožnjo, kar pa prav tako ni stvar znanstvene fantastike. Vrhunski znanstveniki in tehnologi, kot so Stephen Hawking, Bill Gates in Elon Musk, menijo, da je UI zelo resna in nevarna grožnja za človeštvo.
+      <br>
+      <br>
+      Max Tegmark, fizik v MIT-ju, je kot primer nevarnosti navedel razvoj jedrskega orožja. Pravzaprav je prišlo do spodbude za dejansko upočasnitev napredovanja na področju aviarne influence in osredotočenje na zadrževanje. Zadrževanje je pomembno, ker, če bi kdaj izgubili nadzor nad UI, ga morda nikoli ne bomo dobili nazaj. Potem je samo vprašanje časa kdaj bo UI izbrisala človeštvo, ker bo na primer izračunala, da so ljudje virusu podobna bitja ali pa bo ubijala kot način za samoohranjanje. V bistvu bo UI rešila naše probleme ali pa vse uničila. Z drugimi besedami; filma Terminator in Matrica nista tako neverjetna kot smo verjeli.  
+    </p>
+
+    <h2>5. Romantično razmerje z umetno inteligenco</h2>
+    <p class="besedilo_s_sliko">
+      Vprašanje, ki si ga je treba zastaviti, je, da če je UI skoraj ali popolnoma podobna ljudem, ali bomo torej lahko imeli fizične ter čustvene odnose z entiteto le-te? David Levy na Univerzi v Maastrichtu na Nizozemskem je imel zanimiv, povsem verjeten scenarij, v katerem bi spolni odnos z robotom lahko postal vse bolj običajen. Rekel je, da bo sprva tretiran kot čudaški, nakar se bo zgodba pojavila v revijah kot je Cosmo, kjer bo spolni odnos z robotom opisan kot nekaj odličnega, kar pa je za mnenje javnosti odločilnega pomena.
+      <br>
+      <br>
+      Toda kako blizu temu smo? Oba, Levy in Henrik Christensen, ustanovitelj Evropske raziskovalne mreže robotike, sta mislila, da bodo do leta 2012 ljudje imeli spolne odnose z roboti. Pravzaprav smo bližje, kot si mislite, saj že obstajajo številne spolne igrače, ki uporabljajo robotiko in obljubljajo užitek, kakršnega še niste doživeli. Kar se tiče resnih odnosov, kot je zakonska zveza, pa UI in androidi še vedno potrebujejo kar nekaj let napredovanja. Levy meni, da bodo do leta 2050 zakonske, človeške in robotske poroke zakonite. Seveda ne smemo zanemariti možnosti, da je Levy samo prevelik oboževalec filma Her.
+    </p>
+  
+    <img src="pogled.jpg" alt="Robot in ženska" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://pixabay.com/illustrations/binary-code-privacy-policy-woman-2175285">Vir: Pridobljeno s <i>Pixabay</i> (maj 2019).</a>
+    </div>
+
+  <!--Zaključna črta, pod katero so citirani viri, iz katerih je uporabljeno vsebinsko besedilo; med besedilom je z malimi številkami označena povezava do njih-->
+    <hr>
+    <p id="viri">
+      <sup>1</sup> Musek Lešnik K. (2018). <i>Misli o delu učiteljev</i> Pridobljeno s https://www.abced.si/blog-in-clanki/misli-o-delu-uciteljev.
+      <br>
+      <sup>2</sup> Grimminck R. (2015). <i>10 Amazing (Somewhat Terrifying) Facts about AI</i> Pridobljeno s https://www.toptenz.net/10-amazing-and-slightly-terrifying-facts-about-ai.php.
+    </p>
+    
+  <!--Tako imenovana "noga" oziroma zaključni pas strani, z mojim imenom in letom izdelave strani--> 
+  <div id="footer">
+      @Kaja Skol
+      <br> 
+      2019
+    </div>
+    
+ </body>
+</html>

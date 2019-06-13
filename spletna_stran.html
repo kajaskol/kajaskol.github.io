@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--Naslov zavihka, opis, ključne besede, uvožen font iz Google fonts, povezava s ccs-om-->
+  <title> Umetna inteligenca</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Splošen opis vsebine">
+  <meta name="keywords" content="Umetna inteligenca, UI, inteligenca, umetna">
+  <meta name="author" content="Kaja Skol">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+  <!--Naslovna vrstica - logo in naslov spletne strani; ob kliku na logo se vrne na osnovno stran (splošno)--> 
+  <a><h1><a href="spletna_stran.html"><img src="logo.png" width="130px" id="logo"></a><span id="naslov">Umetna inteligenca</span></h1></a>
+
+  <!--Navigacijska vrstica z gumbi in spustnimi gumbi, povezanimi z ostalimi stranmi-->
+  <div id="nav">
+    <ul id="meni">
+      <li class="gumb active"><a href="spletna_stran.html">Splošno</a></li>
+      <li class="gumb"><a href="zgodovina.html">Zgodovina</a></li>
+      <li class="gumb dropdown"><a href="področja.html" class="dropgumb">Področja</a>
+        <div class="dropdown-gumbi">
+          <a href="področja.html">Strojno učenje</a>
+          <a href="področja.html">Nevronske mreže</a>
+        </div>
+      </li>
+      <li class="gumb dropdown"><a href="uporaba.html" class="dropgumb">Uporaba</a>
+        <div class="dropdown-gumbi">
+          <a href="uporaba.html">Izobraževanje</a>
+        </div>
+      </li>
+      <li class="gumb"><a href="zanimivosti.html">Zanimivosti</a></li>
+    </ul>
+  </div>
+
+  <!--Vsebinski del zavihka "Splošno" - vsak odstavek je v svojem "paragrafu", na začetku je uvodni citat in v nadaljevanju dva načina odstavka; eden s pripadajočo sliko in drugi samostojen-->
+
+  <!--Pod slikami, desno od pripadajočega besedila, so povezave do vira slik-->
+    <p id="citat">
+      <i>“Identičnost med človekom in strojem se ne doseže s tem, da prenesemo človeška svojstva na stroj, marveč s tem, da prenesemo mehanične omejitve na človeka.“ <br>Mortimer Taube</i> <a href="#viri"><sup>1</sup></a> 
+    </p>
+
+    <p class="besedilo_s_sliko">
+      <strong>Umetna inteligenca</strong> <i>(artificial intelligence)</i>, krajše UI, je obsežno in raznoliko področje računalništva. Lahko jo opišemo kot študij <strong>inteligentnih agentov</strong> <i>(intelligent agents)</i>, ki zaznavajo in sprejemajo podatke iz okolice in s pomočjo implementirane funkcije izvršujejo akcije. Tako so inteligentni agenti postali glavna unifikacijska tema, ki povezuje zelo različna področja umetne inteligence. Z agenti lahko predstavimo algoritme iz različnih področij, kot so reševanje problemov z iskanjem, igranje iger, avtomatsko sklepanje, planiranje, verjetnostno sklepanje, klasifikacija, razpoznavanje itd. <a href="#viri"><sup>2</sup></a> 
+    </p>
+
+    <img src="robot.jpg" alt="Robot" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.flickr.com/photos/mikemacmarketing/30212411048/in/photostream/">Vir:  MacKenzie, M. (2018, Avgust 16). <i>Artificial Intelligence & AI & Machine Learning.</i> Pridobljeno s <i>Flickr</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Omenimo nekaj značilnih primerov uporabe umetne inteligence, da si bomo lažje ustvarili vtis o njeni zmogljivosti:
+      <ul>
+        <li>Med prvimi uporabniki umetne inteligence so bili trgovci in bankirji. Z njeno pomočjo preučujejo navade svojih strank, da lahko boljšim ponudijo še dodatne ugodnosti (kartice, popuste, točke) in jih tako še bolj navežejo nase, saj so ugotovili, da je pridobivanje novih strank dražje kot ohranjanje obstoječih.</li>
+        <li>Eno od obetavnih področij je tudi zdravstvo. Zdravniki poskušajo z uporabe umetne inteligence odkrivati bolezni bolj zgodaj ter bolj zanesljivo in s tem povečati učinkovitost zdravljenja. Rentgenske, ultrazvočne, magnetnoresonančne in druge posnetke lahko sodobna umetna inteligenca analizira bolje od »živih« ekspertov.</li>
+        <li>Elektronske naprave, namenjene širokim množicam, kot so na primer računalniki in pametni telefoni, vsebujejo vedno več umetne inteligence, s katero poskušajo proizvajalci poenostaviti njihovo uporabo. Tipični primer je zamenjava tipkovnice z mikrofonom (Siri, Cortana, Google Now). </li>
+      </ul>
+    </p>
+    
+    <p>
+      Umetna inteligenca prodira v skoraj vse pore človeških aktivnosti, zato ji futurologi napovedujejo svetlo prihodnost. Ena od znamenitih napovedi se imenuje singularnost – trenutek, ko bodo inteligentne naprave začele razvijati same sebe. Takrat nas bodo naprave intelektualno prehitele in se nam lahko tudi uprle, če se bodo tako odločile. Od takrat naprej bo razvoj dogodkov zelo nepredvidljiv, kar buri domišljijo mnogih. Med predvidevanji se omenja prenos celotne duše v računalnik, kar pomeni neke vrste nesmrtnost, oziroma življenje izven telesa. Drugo podobno predvidevanje je, da šole takrat ne bodo več potrebne, saj si bomo lahko znanje »prenesli« v glavo, kakor danes naložimo aplikacijo v računalnik. 
+      <br>
+      <br>
+      Kaj pa pravzaprav so cilji umetne inteligence?
+      <br>
+      <br>
+      Razumeti principe inteligence, zato da bi bolje razumeli človeka, uvesti inteligentno obnašanje računalnikov, da bi povečali uporabnost računalnikov in pa racionalnost novih sistemov UI, da bi lahko sami razložili kako so prišli do odgovora, ter izpostavili njihove prednosti in slabosti (npr. pristranost). Potrebne bodo nove tehnike učenja naprav, s katerimi bodo lahko naprave svoje odločitve utemeljile z neko uporabno razlago za končnega uporabnika. <a href="#viri"><sup>3</sup></a> 
+    </p>
+
+  <!--Zaključna črta, pod katero so citirani viri, iz katerih je uporabljeno vsebinsko besedilo; med besedilom je z malimi številkami označena povezava do njih-->
+    <hr>
+    <p id="viri">
+      <sup>1</sup> Kononenko, I. (1997). <i>Strojno učenje.</i> Ljubljana: Fakulteta za računalništvo in informatiko. (str. 4)
+      <br>
+      <sup>2</sup> Guid, N. in Strnad, D. (2007). <i>Umetna inteligenca.</i> Maribor: Fakulteta za elektotehniko, računalništvo in informatiko. (str. 1)
+      <br>
+      <sup>3</sup> Ploj, B. (2016). <i>Umetna inteligenca – Splošno (1.del).</i> Pridobljeno s https://www.researchgate.net/profile/Bojan_Ploj/publication/304658049_Umetna_inteligenca_-_Splosno_1del/links/577632ed08ae1b18a7e176b9/Umetna-inteligenca-Splosno-1del.pdf?origin=publication_detail.
+    </p>
+
+  <!--Tako imenovana "noga" oziroma zaključni pas strani, z mojim imenom in letom izdelave strani-->  
+  <div id="footer">
+    @Kaja Skol
+    <br> 
+    2019
+  </div>
+    
+ </body>
+</html>

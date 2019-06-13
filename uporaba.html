@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--Naslov zavihka, opis, ključne besede, uvožen font iz Google fonts, povezava s ccs-om-->
+  <title> Umetna inteligenca</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Uporaba umetne inteligence">
+  <meta name="keywords" content="Uporaba, izobraževanje">
+  <meta name="author" content="Kaja Skol">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+   <!--Naslovna vrstica - logo in naslov spletne strani; ob kliku na logo se vrne na osnovno stran (splošno)--> 
+   <a><h1><a href="spletna_stran.html"><img src="logo.png" width="130px" id="logo"></a><span id="naslov">Umetna inteligenca</span></h1></a>
+
+  <!--Navigacijska vrstica z gumbi in spustnimi gumbi, povezanimi z ostalimi stranmi-->
+  <div id="nav">
+    <ul id="meni">
+      <li class="gumb"><a href="spletna_stran.html">Splošno</a></li>
+      <li class="gumb"><a href="zgodovina.html">Zgodovina</a></li>
+      <li class="gumb dropdown"><a href="področja.html" class="dropgumb">Področja</a>
+        <div class="dropdown-gumbi">
+          <a href="področja.html">Strojno učenje</a>
+          <a href="področja.html">Nevronske mreže</a>
+        </div>
+      </li>
+      <li class="gumb dropdown active"><a href="uporaba.html" class="dropgumb">Uporaba</a>
+        <div class="dropdown-gumbi">
+          <a href="#izobraževanje">Izobraževanje</a>
+        </div>
+      </li>
+      <li class="gumb"><a href="zanimivosti.html">Zanimivosti</a></li>
+    </ul>
+  </div>
+
+  <!--Vsebinski del zavihka "Uporaba" - vsak odstavek je v svojem "paragrafu", na začetku je uvodni citat in v nadaljevanju dva načina odstavka; eden s pripadajočo sliko in drugi samostojen-->
+
+  <!--Pod slikami, desno od pripadajočega besedila, so povezave do vira slik-->
+    <p id="citat">
+      <i>“Vrhovni sodnik vsake fizikalne teorije je eksperiment.“ <br>Lev Landau in Juriš Rumer</i> <a href="#viri"><sup>1</sup></a> 
+    </p>
+
+    <p>
+      Kakovostni podatki so nujno potrebni za kakovostno učenje, a niso garancija za dobro naučenost, saj med učenjem lahko kljub temu pride do zapletov. Podobno velja tudi pri ljudeh, kljub dobremu učbeniku se lahko zgodi, da po učenju znanje ni popolno, če se na primer učimo premalo ali če smo nenadarjeni in podobno. Pred začetkom uporabe je zato treba najprej ovrednotiti naučenost inteligentnega sistema. Zgodi se lahko, da je naprava popolnoma nenaučena in daje same napačne odgovore. Druga skrajnost pa je sistem, ki izlušči znanje tako učinkovito, da prekaša ljudi, vključno z vsemi znanstveniki, kot na primer računalnik AlphaGo iz leta 2016 (zavihek Zgodovina). Učenje na pamet torej nikakor ne pride v poštev, nujno so potrebni razumevanje, abstrakcija oziroma generalizacija znanja.  <a href="#viri"><sup>2</sup></a> 
+    </p>
+
+    <h2>Program za razporejanje delavcev</h2>
+    <p class="besedilo_s_sliko">
+      V slovenskem podjetju ALGiT se ukvarjajo z evolucijsko umetno inteligenco, ki je še posebej močna tam, kamor moč nevronskih mrež ne seže, človek pa še manj. Na osnovi svojih raziskav so razvili WoShi. Program, ki zmanjša število ur za obstoječi proces (manj nadur ali pogodbenega dela) in omogoča izdelavo enostavnega, hitrega in 100 % avtomatskega razporeda delavcev. Delavci posledično delajo v boljših pogojih in zakonske omejitve niso kršene.
+      <br>
+      <br>
+      Osnovna zahteva za izdelavo razporeda je podatek o številu delavcev, ki morajo biti prisotni v določenih časovnih obdobjih za vsak dan. Vnesti je potrebno še mesečno delovno obveznost, zaporedno število dni, dnevni in tedenski počitek ter turnuse po dnevih, dodatno pa je mogoče vnesti še dopuste, obvezne delovne dni ali odsotnosti, kombinacije delavcev itd. 
+    </p>
+
+    <img src="urnik.jpg" alt="Urnik" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/macbook-pro-turned-on-displaying-schedule-on-table-1893424/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <h2>Inteligentni šolski urnik</h2>
+    <p>
+      iUrnik, prav tako kreacija podjetja ALGiT, je pameten program, ki izračuna šolski urnik, pri katerem upošteva praktično katero koli zahtevo uporabnika. V svojem izračunu upošteva predpisan predmetnik, osebne želje in potrebe vsakega učitelja in učenca, prostorske možnosti, časovne zahteve in omejitve, dopolnilne dejavnosti, jutranje in popoldansko varstvo, prevoze itd. Umetna inteligenca programa iUrnik nudi optimalno rešitev – celovito izdelan in preverjeno učinkovit urnik, ki ga je mogoče prilagoditi s spremembo teže vhodnih kriterijev za izračun. <a href="#viri"><sup>3</sup></a> 
+    </p>
+
+  <!--Značka v h2 označuje odstavek, na katerega skočimo, če v spustnem meniju kliknemo na gumb-->
+    <h2 id="izobraževanje">Umetna inteligenca v izobraževanju</h2>
+    <p class="besedilo_s_sliko">
+      Formula je bila včasih precej preprosta: višja stopnja izobrazbe je pomenila več znanja in običajno tudi višje dohodke. Ne govorimo o nekih strašansko oddaljenih časih, temveč se je treba zazreti zgolj dobro generacijo nazaj, ko se je za visokošolsko izobraževanje odločilo bistveno manj dijakov kot danes.
+      <br>
+      <br>
+      Slovenija je med vodilnimi evropskimi državami po deležu mladih (19–24 let), ki so se odločili za študij; na fakultetah in visokih šolah jih najdemo skoraj polovico. Vsaj deloma lahko tako visok delež študentov pripišemo relativni dostopnosti visokega študija. Toda pogosto zasledimo vprašanje, kako znanje (torej ne le formalna izobrazba), ki ga študenti pridobijo v času šolanja, ustreza realnim potrebam na trgu dela. Pogost odgovor med poznavalci podjetniškega sveta je na žalost: »Ne ravno najbolj.« 
+    </p>
+
+    <img src="izobraževanje.jpg" alt="Izobraževanje" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/notes-macbook-study-conference-7102/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+    <p>
+      Kako lahko pri tem pomaga umetna inteligenca? 
+      <br>
+      <br>
+      Zelo očitno to lahko počne vsaj na tri načine, in sicer tako da pomaga preoblikovati študijske programe v skladu s potrebami trga, da pomaga usposabljati kadre za potrebe na trgu in da s trgom uspešno komunicira o potencialu, ki ga bodo izobraževalni programi pridelali. Izobraževanje je tako kot vse druge panoge podvrženo izjemnemu vplivu tehnoloških sprememb, ki na novo definirajo proces pridobivanja in uporabe znanja. Prva sprememba, ki jo v izobraževanje prinaša umetna inteligenca, je tako pravzaprav sprememba izobraževalnega težišča. Hiter razvoj umetne inteligence zahteva kadre, ki imajo ustrezne veščine s področij, ki jih v angleščini označujemo s kratico STEM: znanost, tehnologija, inženirstvo, matematika. Obstaja konsenz, da so veščine z zgoraj omenjenih področij ključne za gospodarski razvoj in konkurenčnost držav, saj ustvarjajo hrbtenico industrij z visoko dodano vrednostjo. Na mikro ravni pa gre za veščine, ki posameznikom, zaposlenim v teh industrijah, zagotavljajo visoke plače in dinamičen karierni razvoj.
+      <br>
+      <br> 
+      Sistem tako ustvarja povratno zanko: Ko UI ustvarja vse večje potrebe po STEM-kadrih, jim daje večjo težo in pomen v učnih načrtih izobraževalnih institucij. Več rešitev UI pomeni več izobraženih kadrov, kar pa pomeni še več rešitev UI. Kadar UI postavljamo v središče razprav na področju izobraževanja, pogovor običajno teče o potencialih, kot so personalizacija učnega procesa, podpiranje učnih metod z algoritmi in nadgradnja klasičnih učnih pripomočkov. Kot neizogibno si predstavljam tudi preoblikovanje klasičnih učnih pripomočkov (knjig, zvezkov, tabel, projektorjev). Tudi šole bodo morale postati »pametne«. Bi lahko z novimi sistemi nadzora izkoreninili plonkanje, preverjali prisotnost študentov na predavanjih, naredili nekatere predmete bolj praktične, bolj interaktivne? Brez dvoma.
+      <br>
+      <br> 
+      Bi lahko UI učinkovito nadomestila tudi učitelja ali profesorja v razredu? Zagotovo lahko že sedaj prevzame nekatere repetitivne naloge, ki so jih doslej izvajali pedagoški delavci, recimo ocenjevanje ali pregledovanje domačih nalog in izpitov. Upravičeno lahko pričakujemo, da bodo virtualni tutorji v prihodnosti prevzeli tudi del poučevanja preprostejših vsebin (ne pa tudi kompleksnih). 
+    </p>
+
+    <p class="besedilo_s_sliko">
+      S pomočjo UI bi lahko trg in izobraževalni programi bolje komunicirali. Še nikdar v zgodovini ni imelo toliko ljudi dostopa do tako različnih možnosti izobraževanja. Pa vendar se zdi, da trg dela in področje izobraževanja še nikoli doslej nista imela toliko težav pri usklajevanju medsebojnih potreb. Trg zahteva izbrane kadre. In ko uspejo izobraževalni programi nanje odgovoriti in prilagoditi programe, trg dela že narekuje nove potrebe. Pomislimo torej na to, kakšno moč bi umetna inteligenca lahko imela pri načrtovanju posameznikove učne in karierne poti. Na podlagi analiz njegove pretekle uspešnost in napredovanja bi lahko celo predvidela oziroma napovedala njegovo uspešnost v prihodnje. To je pomembno, ker bi pomagala študijskim programom usklajevati število razpisanih prostih mest, trg pa obveščati o številu kvalificiranih mladih inženirjev, tehnologov, matematikov oz. drugih znanstvenikov, ki bodo na voljo v določenem letu. Trg dela in šolstvo bi bila končno pripravljena. <a href="#viri"><sup>4</sup></a>
+    </p>
+
+    <img src="abc.jpg" alt="Šolska tabla" width="30%" class="slike">
+    <div class="okvir_slike"><a id="link_vira" href="https://www.pexels.com/photo/abc-books-chalk-chalkboard-265076/">Vir: Pridobljeno s <i>Pexels</i> (maj 2019).</a>
+    </div>
+
+  <!--Zaključna črta, pod katero so citirani viri, iz katerih je uporabljeno vsebinsko besedilo; med besedilom je z malimi številkami označena povezava do njih-->
+    <hr>
+    <p id="viri">
+      <sup>1</sup> Kononenko, I. (1997). <i>Strojno učenje.</i> Ljubljana: Fakulteta za računalništvo in informatiko. (str. 45)
+      <br>
+      <sup>2</sup> Ploj, B. (2016). <i>Umetna inteligenca – Splošno (1.del).</i> Pridobljeno s https://www.researchgate.net/profile/Bojan_Ploj/publication/304658049_Umetna_inteligenca_-_Splosno_1del/links/577632ed08ae1b18a7e176b9/Umetna-inteligenca-Splosno-1del.pdf?origin=publication_detail.
+      <br>
+      <sup>3</sup> <i>Umetna inteligenca v praksi.</i> (2018). Pridobljeno s https://feelthefuture.si/umetna-inteligenca-v-praksi/
+      <br>
+      <sup>4</sup> Wolpoti, M. (2019). <i>Trg dela in izobraževanje v času umetne inteligence.</i> Pridobljeno s https://www.ntk.si/blog/marina_wolpoti_trg_dela_in/40638
+    </p>
+
+  <!--Tako imenovana "noga" oziroma zaključni pas strani, z mojim imenom in letom izdelave strani--> 
+  <div id="footer">
+      @Kaja Skol
+      <br> 
+      2019
+    </div>
+    
+ </body>
+</html>
